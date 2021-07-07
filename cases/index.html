@@ -261,56 +261,56 @@
             
             
             <a href="flamecutting" class="flamecutting" value="flamecutting">
-                <span style='color: #b11b30'>flamecutting <i>1</i> </span>
+                <span style='color: #abcbbc'>flamecutting <i>1</i> </span>
             </a>
             
         
             
             
             <a href="cnc" class="cnc" value="cnc">
-                <span style='color: #c2ab00'>cnc <i>1</i> </span>
+                <span style='color: #42b114'>cnc <i>1</i> </span>
             </a>
             
         
             
             
             <a href="steelplate" class="steelplate" value="steelplate">
-                <span style='color: #b40aa4'>steelplate <i>2</i> </span>
+                <span style='color: #231430'>steelplate <i>2</i> </span>
             </a>
             
         
             
             
             <a href="mechanism" class="mechanism" value="mechanism">
-                <span style='color: #3ab40b'>mechanism <i>1</i> </span>
+                <span style='color: #bb0311'>mechanism <i>1</i> </span>
             </a>
             
         
             
             
             <a href="lathe" class="lathe" value="lathe">
-                <span style='color: #aa3032'>lathe <i>1</i> </span>
+                <span style='color: #2c3300'>lathe <i>1</i> </span>
             </a>
             
         
             
             
             <a href="metalworking" class="metalworking" value="metalworking">
-                <span style='color: #141023'>metalworking <i>1</i> </span>
+                <span style='color: #4a4ac2'>metalworking <i>1</i> </span>
             </a>
             
         
             
             
             <a href="leveling" class="leveling" value="leveling">
-                <span style='color: #0c1a42'>leveling <i>1</i> </span>
+                <span style='color: #c2a21b'>leveling <i>1</i> </span>
             </a>
             
         
             
             
             <a href="heavyfabrication" class="heavyfabrication" value="heavyfabrication">
-                <span style='color: #b040c3'>heavyfabrication <i>1</i> </span>
+                <span style='color: #b23a24'>heavyfabrication <i>1</i> </span>
             </a>
             
         
@@ -422,6 +422,32 @@
     text-decoration: none;
 }
 </style>
+<!-- Messenger Chat Plugin Code -->
+<div id="fb-root"></div>
+
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "110120241293335");
+  chatbox.setAttribute("attribution", "biz_inbox");
+
+  window.fbAsyncInit = function() {
+	FB.init({
+	  xfbml            : true,
+	  version          : 'v11.0'
+	});
+  };
+
+  (function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+	fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 	</body>
 
 </html>
