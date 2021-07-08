@@ -83,6 +83,9 @@
 .move {
     margin-top: -84px;
     transition: margin-top .8s ease-in-out;
+    -moz-transition: margin-top .8s ease-in-out;
+    -webkit-transition: margin-top .8s ease-in-out;
+    -o-transition: margin-top .8s ease-in-out;
 }
 
 @media screen and (min-width:600px) {
@@ -100,10 +103,10 @@
         flex-direction: column;
         position: relative;
         top: 0px;
-        transition: ease-in-out;
-        -moz-transition: top .5s;
-        -webkit-transition: top .5s;
-        -o-transition: top .5s;
+        transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
     }
 }
 
@@ -118,14 +121,14 @@
         /*background-color: #FFF;*/
         border-radius: 10px;
         overflow: hidden;
-        box-shadow: 0px 0px 40px 0px rgba(50, 50, 50, 0.08);
+        box-shadow: 0 10px 40px 0 rgba(50, 50, 50, .1);
         flex-direction: column;
         position: relative;
         top: 0px;
-        transition: ease-in-out;
-        -moz-transition: top .5s;
-        -webkit-transition: top .5s;
-        -o-transition: top .5s;
+        transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -webkit-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
     }
 }
 
@@ -268,7 +271,7 @@
     height: 40px;
     display: flex;
     padding: 0 calc((100% - 1160px)/2);
-    margin-bottom: 20px;
+    margin-bottom: 2em;
     color: #12183ab7;
 }
 
@@ -322,6 +325,7 @@
 
 .change-page .n-page a {
     color: #12183ab7;
+    opacity: .7;
     text-decoration: none;
 }
 
@@ -332,8 +336,8 @@
     line-height: 40px;
     border-radius: 10px;
     margin-right: 18px;
-    color: #898FA0;
-    box-shadow: 0 20px 40px 0 rgba(50, 50, 50, 0.1);
+    /*color: #898FA0;*/
+    box-shadow: 0 10px 40px 0 rgba(50, 50, 50, 0.1);
     transition: ease-in-out;
     -moz-transition: all .5s;
     -webkit-transition: all .5s;
@@ -355,9 +359,11 @@
 .change-page .n-page a .next:hover {
     margin-top: -15px;
     cursor: pointer;
+    box-shadow: 0 20px 40px 0 rgba(50, 50, 50, 0.1);
 }
 
 .change-page .p-page a .previous:hover {
     margin-top: -15px;
     cursor: pointer;
+    box-shadow: 0 20px 40px 0 rgba(50, 50, 50, 0.1);
 }

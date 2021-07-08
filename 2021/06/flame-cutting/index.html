@@ -219,7 +219,7 @@
 
     .sidebar ul {
         width: 100%;
-        margin-top: 50px
+        margin-top: 26px/*50px*/;
     }
 
     .sidebar ul li {
@@ -242,7 +242,7 @@
     .my_foot {
         width: 100%;
         padding: 10px;
-        margin-bottom: 10px;
+        /*margin-bottom: 10px;*/
         position: absolute;
         bottom: 0
     }
@@ -338,10 +338,10 @@
 </script>
 <div class="Last-Next">
     
-    <a href="/2021/07/openex-metalworking/">
+    <a href="/2021/06/flame-cutting%20-%20%E5%89%AF%E6%9C%AC/">
         <div class="last">
             <span>Previous</span>
-            <p>Openex Metalworking Services</p>
+            <p>Openex Flame Cutting for Steel Parts</p>
         </div>
     </a>
     
@@ -374,7 +374,7 @@
 </script><noscript><span id="comments">Please enable JavaScript to view the comments.</span></noscript></div>
 <style>
     #disqus_thread {
-        margin-top: 20px;
+        margin: 15px 30px auto 15px;
     }
     
     #h_line {
@@ -390,17 +390,47 @@
         line-height: 2em;
         font-size: 16px;
         letter-spacing: .012em;
+        text-align: center;
+        color: #12183a;
+        opacity: .4;
     }
 
-    #comment_box {
+    #comments:hover {
+        opacity: .7;
+    }
+
+    @media screen and (min-width:900px) {
+        #comment_box {
         display: table;
-        margin: 20px auto 40px auto;
+        margin: 2em auto;
         padding: 64px 40px;
         width: 100%;
         max-width: 900px;
         align-content: center;
         justify-content: center;
         border-radius: 10px;
+        transition: all .8s ease-in-out;
+        -o-transition: all .8s ease-in-out;
+        -moz-transition: all .8s ease-in-out;
+        -webkit-transition: all .8s ease-in-out;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        #comment_box {
+        display: table;
+        margin: 20px auto 40px auto;
+        padding: 64px 40px;
+        width: 90%;
+        max-width: 600px;
+        align-content: center;
+        justify-content: center;
+        border-radius: 10px;
+        transition: all .8s ease-in-out;
+        -o-transition: all .8s ease-in-out;
+        -moz-transition: all .8s ease-in-out;
+        -webkit-transition: all .8s ease-in-out;
+        }
     }
 
     #comment_box a {
@@ -411,6 +441,7 @@
     #comment_box:hover {
         box-shadow: 0 10px 40px 0 rgba(50, 50, 50, .1);
     }
+    
 </style>
 
 		
@@ -418,7 +449,7 @@
 
 <div class="footer">
 	<div class="Copyright">
-		<a target="_blank" rel="noopener" href="https://www.cncmetalworking.com/">©&nbsp;2021&nbsp;Openex Mechanical Technology Limited</a>
+		<a target="_blank" rel="noopener" href="https://www.cncmetalworking.com/" style="text-align: center;">©&nbsp;2021&nbsp;Openex Mechanical Technology Limited</a>
 	</div>
 	<div class="contact">
 		
