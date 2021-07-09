@@ -35,13 +35,10 @@
     letter-spacing: -.006em/*2px*/;
     text-transform: uppercase;
     text-align: left;
-    text-shadow: 0.02em 0.02em 0.03em rgb(255, 255, 255, 0.85);
-    background: linear-gradient(to right, rgb(205, 205, 205, 0.75), rgb(225, 225, 225, 0.75));
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    -o-background-clip: text;
-    color: transparent;
+    text-shadow: 0.02em 0.02em 0.10em rgb(0, 0, 0);
+    /*background: rgb(215, 215, 215, 0.75);*/
+    /*background-clip: text;*/
+    color: rgb(255, 255, 255);
 }
 
 .header-bg .bg-content span {
