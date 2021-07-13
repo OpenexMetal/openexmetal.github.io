@@ -43,7 +43,7 @@
 }
 
 .header-bg .bg-content h2::before{
-    content: "#";
+    content: "#\00a0";
 }
 
 .header-bg .bg-content span {
