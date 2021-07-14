@@ -138,6 +138,7 @@
 
 .article-content .content a time {
     white-space: nowrap;
+    margin-left: 6px;
 }
 
 .article-content .content a:hover {
