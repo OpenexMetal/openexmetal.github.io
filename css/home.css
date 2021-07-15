@@ -58,7 +58,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
 }
 
 .header-bg .bg-content {
@@ -66,7 +65,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 
 .header-bg .bg-content span {
@@ -86,7 +85,8 @@
 .header-bg .bg-content h1 {
     display: flex;
     /*margin-top: 4px;*/
-    margin: 46px 20px 0 20px;
+    overflow: hidden;
+    margin: 46px 20px auto;
     font-size: 1.8em/*16px*/;
     font-weight: 950;
     line-height: 1.5/*22px*/;
