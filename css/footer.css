@@ -37,17 +37,17 @@
     -webkit-animation-duration: 1500ms;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
-    transition: ease-in-out;
-    -moz-transition: all .4s;
-    -webkit-transition: all .4s;
-    -o-transition: all .5s;
+    transition: transform 1.2s ease-in-out;
+    -moz-transition: transform 1.2s ease-in-out;
+    -webkit-transition: transform 1.2s ease-in-out;
+    -o-transition: transform 1.2s ease-in-out;
 }
 
 .footer .mailbottom:hover {
-    transform: scale(1.03);
-    -moz-transform: scale(1.03);
-    -webkit-transform: scale(1.03);
-    -o--transform: scale(1.03);
+    transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -webkit-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
 }
 
 @keyframes breathe {
