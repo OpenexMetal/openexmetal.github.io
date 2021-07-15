@@ -16,6 +16,31 @@
     flex-grow: 1;
 }
 
+.footer .Copyright .reserved {
+    transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -webkit-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -moz-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -o-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.footer .Copyright .reserved:hover{
+    font-weight: 600;
+    letter-spacing: 0.1px;
+}
+
+.footer .Copyright .reserved:hover::before {
+    opacity: 1;
+    transition-delay: .2s
+    -webkit-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -moz-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -o-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+/*.footer .Copyright .reserved::before {
+    transition: all .3s linear;   //replace 
+    letter-spacing: 0;           //additional
+ }*/
+
 .footer .mailbottom {
     display: flex;
     font-size: 14px;

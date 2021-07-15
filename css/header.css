@@ -118,12 +118,16 @@
 .header .header-top .h-right ul li {
     padding-left: 36px;
     /*padding: 0 18px;*/
-    white-space: nowrap
+    white-space: nowrap;
 }
 
-.header .header-top .h-right ul li a {
+.header .header-top .h-right ul li a{
     color: #898fa0bb;
     text-decoration: none;
+    transition: color .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -moz-transition: color .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -webkit-transition: color .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -o-transition: color .5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .header .header-top .h-right ul li a:hover {
