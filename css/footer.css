@@ -7,27 +7,25 @@
 .footer .Copyright {
     display: flex;
     /*margin: 0px 3px 3px 0px;*/
-    margin-left: 18px;
     color: #898fa0bb;
     font-size: 14px;
     flex-basis: 0;
     justify-content: flex-start;
     text-align: center;
     align-items: center;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .footer .mailbottom {
     display: flex;
     font-size: 14px;
     flex-grow: 0;
-    margin: 0px 18px 0px 5px;
+    margin-right: 5px;
     border-radius: 15px;
     padding: 3px 5px 3px 5px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
-    box-shadow: 0px 1px 4px rgba(0,0,0,0.3), 0px 0px 20px rgba(0,0,0,0.1) inset;
     overflow: hidden;
     animation-timing-function: ease-in-out;
     animation-name: breathe;
@@ -47,19 +45,22 @@
 
 .footer .mailbottom:hover {
     transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -o--transform: scale(1.03);
 }
 
 @keyframes breathe {
     0% {
         opacity: .3;
         background-color: #12183a;
-        box-shadow: /*0px 1px 2px rgba(0,0,0,0.3),*/ 0px 0px 10px rgba(0,0,0,0.1) inset;
+        box-shadow: /*0px 1px 2px rgba(0,0,0,0.3),*/0px 0px 10px rgba(0,0,0,0.1) inset;
     }
 
     100% {
         opacity: 1;
         background-color: #898fa0bb;
-        box-shadow: /*0px 1px 4px rgba(0,0,0,0.3),*/ 0px 0px 20px rgba(0,0,0,0.1) inset;
+        box-shadow: /*0px 1px 4px rgba(0,0,0,0.3),*/0px 0px 20px rgba(0,0,0,0.1) inset;
     }
 }
 
@@ -67,13 +68,13 @@
     0% {
         opacity: .3;
         background-color: #12183a;
-        box-shadow: 0px 1px 2px rgba(0,0,0,0.3), 0px 0px 10px rgba(0,0,0,0.1) inset;
+        box-shadow: /*0px 1px 2px rgba(0,0,0,0.3),*/0px 0px 10px rgba(0,0,0,0.1) inset;
     }
 
     100% {
         opacity: 1;
         background-color: #898fa0bb;
-        box-shadow: 0px 1px 4px rgba(0,0,0,0.3), 0px 0px 20px rgba(0,0,0,0.1) inset;
+        box-shadow: /*0px 1px 4px rgba(0,0,0,0.3),*/0px 0px 20px rgba(0,0,0,0.1) inset;
     }
 }
 
@@ -86,9 +87,9 @@
     float: left;
 }
 
-/*.footer .mailto::before {
+.footer .mailto::before {
     content: "\00a0";
-}*/
+}
 
 .footer .mailbox {
     background-repeat: no-repeat;
@@ -98,7 +99,6 @@
     width: 16px;
     display: inline-block;
     margin-left: 2px;
-    margin-right: 3px;
     overflow: hidden;
     animation-timing-function: ease-in-out;
     animation-name: hollow;
@@ -156,15 +156,21 @@
     height: 100%
 }
 
+@media screen and (min-width:600px) {
+    .footer .mailbottom {
+        margin-left: 18px;
+    }
+}
+
 @media screen and (max-width:600px) {
     .footer {
         /*padding: 2em;*/
         flex-direction: column-reverse
     }
 
-    .footer .Copyright {
+    /*.footer .Copyright {
         margin: auto
-    }
+    }*/
 
     .footer .contact {
         margin: auto;
@@ -173,5 +179,9 @@
 
     .footer .contact a {
         margin-bottom: 10px
+    }
+
+    .footer .mailbottom {
+        margin-left: 18px;
     }
 }
