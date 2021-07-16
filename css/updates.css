@@ -130,6 +130,10 @@
     color: #3C4858;
     font-size: 17px;
     padding: 20px;
+    transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .article-content .content a span {
