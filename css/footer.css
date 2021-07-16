@@ -7,7 +7,6 @@
 .footer .Copyright {
     display: flex;
     /*margin: 0px 3px 3px 0px;*/
-    color: #898fa0bb;
     font-size: 14px;
     flex-basis: 0;
     justify-content: flex-start;
@@ -16,10 +15,19 @@
     flex-grow: 1;
 }
 
+.footer .Copyright a {
+	text-decoration: none;
+	color: #898fa0bb;
+	font-weight: 500;
+}
+.footer .Copyright a:link a:visited a:hover{
+    text-decoration: none;
+}
+
 .footer .Copyright .reserved {
     transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
-    -webkit-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
     -moz-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -webkit-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
     -o-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
@@ -30,9 +38,13 @@
 
 .footer .Copyright .reserved:hover::before {
     opacity: 1;
-    transition-delay: .2s
-    -webkit-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    transition-delay: .2s;
+    -moz-transition-delay: .2s;
+    -webkit-transition-delay: .2s;
+    -o-transition-delay: .2s;
+    transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
     -moz-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -webkit-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
     -o-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
 }
 

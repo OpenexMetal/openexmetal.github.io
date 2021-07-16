@@ -21,7 +21,7 @@
     flex-basis: 721px;
     padding: 196px 40px 160px;
     flex-direction: column;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     align-items: center;
 }
 
@@ -110,9 +110,9 @@
     margin-bottom: 2em;
     position: relative;
     transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
     -moz-transition: all .8s ease-in-out;
     -webkit-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
 }
 
 .tags-list {
@@ -137,6 +137,10 @@
     top: 0;
     color: #43576B;
     font-weight: 500;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
 
 .tags-content .content .tags-list a>span>i {
@@ -147,8 +151,7 @@
 
 .tags-content .content .tags-list a>span:hover {
     top: -2px;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, .22);
-    transition: all .3s ease-in-out;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, .12);
 }
 
 .tags-page {

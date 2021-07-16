@@ -21,7 +21,7 @@
     flex-basis: 721px;
     padding: 196px 40px 160px;
     flex-direction: column;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     align-items: center;
 }
 
@@ -111,9 +111,9 @@
     margin-bottom: 2em;
     position: relative;
     transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
     -moz-transition: all .8s ease-in-out;
     -webkit-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
 }
 
 .oneLink {

@@ -62,7 +62,7 @@
 
 .header-bg .bg-content {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     justify-content: center;
     align-items: center;
     /*margin: 0 auto;*/
@@ -177,10 +177,10 @@
     height: 200px;
     background: rgb(0, 0, 0, 0.16);
     position: absolute;
-    -o-transition: all .5s ease;
+    transition: all .5s ease;
     -moz-transition: all .5s ease;
     -webkit-transition: all .5s ease;
-    transition: all .5s ease;
+    -o-transition: all .5s ease;
 }
 
 .main .feed .feed-display .feed-overlay:hover {
@@ -208,10 +208,10 @@
     /*background: rgb(215, 215, 215, 0.75);*/
     /*background-clip: text;*/
     color: rgb(255, 255, 255);
-    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
     -moz-transition: opacity .5s ease;
     -webkit-transition: opacity .5s ease;
-    transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
 }
 
 .main .feed .feed-display a .feed-excerpt {
@@ -224,10 +224,10 @@
     opacity: 0;
     font-size: 0.8em;
     line-height: 1.5;
-    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
     -moz-transition: opacity .5s ease;
     -webkit-transition: opacity .5s ease;
-    transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
 }
 
 .main .feed .feed-display a:hover .feed-excerpt {

@@ -20,7 +20,7 @@
     display: flex;
     flex-basis: 721px;
     padding: 196px 40px 160px;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 
 .header-bg .bg-content h1 {
@@ -112,9 +112,9 @@
     margin-bottom: 2em;
     position: relative;
     transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
     -moz-transition: all .8s ease-in-out;
     -webkit-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
 }
 
 .article-content .content p {
