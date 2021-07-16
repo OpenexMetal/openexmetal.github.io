@@ -150,7 +150,7 @@
 }
 
 .tags-content .content .tags-list a>span:hover {
-    top: -2px;
+    padding-top: -2px;
     box-shadow: 0 8px 10px rgba(0, 0, 0, .12);
 }
 
