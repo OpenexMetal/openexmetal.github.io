@@ -3,7 +3,7 @@
     display: flex;
     width: 100%;
     background: linear-gradient(0deg, #f1f5fb, #f9fcff);
-    flex-shrink: 0
+    flex-shrink: 0;
 }
 
 .bg-content-img {
@@ -11,7 +11,7 @@
     background-size: cover;
 }
 
-.bg-img {
+/*.bg-img {
     position: relative;
     display: flex;
     width: 100%;
@@ -19,7 +19,7 @@
     flex-shrink: 0;
     height: 100%;
     background-size: cover;
-}
+}*/
 
 .bg-content-img .bg-content h1 {
     z-index: 2;
@@ -57,11 +57,17 @@
     content: ""
 }
 
+.header-bg .bg-content ol, ul {
+    margin-bottom: 0rem;
+    padding-left: 0rem;
+}
+
+
 .header-bg .bg-content {
     display: flex;
     margin: 0 auto;
-    padding: 196px 40px 160px;
-    flex-basis: 721px;
+    padding: 160px 40px 80px;
+    flex-basis: 880px;
     flex-direction: column
 }
 
@@ -79,15 +85,19 @@
     border-radius: 15px;
     background: rgba(18, 24, 58, .06);
     line-height: 20px;
-    -webkit-transition: background .5s;
-    -moz-transition: background .5s;
-    -o-transition: background .5s;
-    transition: ease-in-out;
+    transition: transform 1.2s ease-in-out!important;
+    -moz-transition: transform 1.2s ease-in-out!important;
+    -webkit-transition: transform 1.2s ease-in-out!important;
+    -o-transition: transform 1.2s ease-in-out!important;
     flex-grow: 0
 }
 
 .header-bg .bg-content .tag li:hover {
-    background: #bec8d3
+    background: #bec8d3;
+    transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -webkit-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
 }
 
 .header-bg .bg-content .tag li a {
@@ -102,7 +112,7 @@
     color: #12183a;
     font-weight: 600;
     font-size: 30px;
-    line-height: 1.6
+    line-height: 1.6;
 }
 
 .header-bg .bg-content .article-info,
@@ -113,21 +123,22 @@
 .header-bg .bg-content .article-info .article-author span {
     margin-left: 8px;
     color: #12183a;
-    font-weight: 500;
-    font-size: 15px
+    font-weight: 400;
+    font-size: 15px;
 }
 
 .header-bg .bg-content .article-info .article-author span a {
     color: #12183a;
     text-decoration: none;
-    -webkit-transition: color .5s;
-    -moz-transition: color .5s;
-    -o-transition: color .5s;
-    transition: ease-in-out
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
 }
 
 .header-bg .bg-content .article-info .article-author span a:hover {
-    color: #006af7
+    /*color: #006af7*/
+    opacity:0.7!important;
 }
 
 .header-bg .bg-content .article-info .article-author p {
@@ -201,30 +212,22 @@
     .article-content .content {
         display: flex;
         width: 100%;
-        font-size: 1.1em;
+        font-size: 1.1rem;
         flex-direction: column;
     }
 }
 
-.article-content:hover {
-    box-shadow: 0 10px 40px 0 rgba(50, 50, 50, .1);
-}
-
-.content-move {
-    position: relative;
-    z-index: 100;
-    margin-top: -64px;
-    transition: all .8s ease-in-out;
-    -o-transition: all .8s ease-in-out;
-    -moz-transition: all .8s ease-in-out;
-    -webkit-transition: all .8s ease-in-out;
-}
-
 .Last-Next {
     display: flex;
-    margin: 2em auto 2em;
-    max-width: 980px;
+    margin: 2rem auto 2rem;
+    width: 100%;
     background: hsla(0, 0%, 100%, .8)
+}
+
+@media screen and (min-width:900px) {
+    .Last-Next {
+        max-width: 980px;
+    }
 }
 
 .Last-Next a {
@@ -246,9 +249,9 @@
     opacity: .4;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
     align-content: flex-start;
     justify-content: center;
     flex-direction: column;
@@ -282,9 +285,9 @@
     opacity: .4;
     cursor: pointer;
     transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
     align-content: flex-end;
     flex-grow: 1;
     justify-content: center;
@@ -311,4 +314,8 @@
     font-size: 16px;
     margin-right: 16px;
     margin-left: 16px;
+}
+
+.Post-Navi {
+    min-height: 220px;
 }

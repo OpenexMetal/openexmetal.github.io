@@ -1,0 +1,183 @@
+.scroll .btn-height {
+    padding-top: 2%;
+}
+
+.scroll svg {
+    opacity: 0;
+    /*animation-timing-function: ease;*/
+    animation-name: scrollDown;
+    animation-duration: 1500ms;
+    animation-iteration-count: 12, infinite;
+    /*animation-direction: alternate;*/
+    /*-webkit-animation-timing-function: ease;*/
+    -webkit-animation-name: scrollDown;
+    -webkit-animation-duration: 1500ms;
+    -webkit-animation-iteration-count: 12, infinite;
+    /*-webkit-animation-direction: alternate;*/
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translate(0, -50%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translate(0, 50%);
+        opacity: 0;
+    }
+}
+
+.process {
+    transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -moz-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -webkit-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -o-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.process-text {
+	position: relative;
+	z-index: 1;
+}
+
+.process:hover {
+    transform: translate3d(0px,-5px,-5px);
+}
+
+.process:hover .process-icon{
+    transform: translate3d(0px,-5px,-5px);
+}
+
+.process-icon {
+    margin-bottom: 0.5rem;
+    transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -moz-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -webkit-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -o-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.process-title {
+    font-weight: 400;
+    font-size: 1.5rem !important;
+}
+
+.process-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 100px;
+    color: rgba(0, 0, 0, 0.05);
+    z-index: -1;
+    font-weight: 500;
+}
+
+.cap-carousel .carousel{
+    margin-bottom: 0rem !important;
+}
+
+.plan {
+    margin-top: 1.25rem !important;
+    margin-bottom: 2rem !important;
+}
+
+
+.capslogan .fw-light {
+    font-weight: 400 !important;
+}
+
+.capslogan .cta {
+    background: linear-gradient(150deg, rgba(33, 37, 41, 0.6) 0%, rgba(33, 37, 41, 0.6) 100%), url(/image/screw.jpg) !important;
+    background-size: cover;
+}
+
+.capslogan .cta {
+    border-radius: calc(0.25rem - 1px);
+    box-shadow: 0 10px 40px 0 rgb(50 50 50 / 15%) !important;
+    transition: all 5s cubic-bezier(0.23, 1, 0.320, 1);
+    -moz-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -webkit-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -o-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.capslogan .cta:hover {
+    transform: translate3d(0px,-5px,-5px);
+}
+
+.capslogan .cta:hover .text-white {
+    transform: scale(1.01) translate3d(0px,-2px,-2px);
+}
+
+
+.capslogan .text-white {
+    transition: all 5s cubic-bezier(0.23, 1, 0.320, 1);
+    -moz-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -webkit-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -o-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.capcard .card {
+    box-shadow: 0 10px 40px 0 rgb(50 50 50 / 15%) !important;
+}
+
+.capcard .mb-4 {
+    margin-bottom: 2.5rem !important;
+}
+
+.capcard .pt-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+.capcard .card-body {
+    padding: 0rem !important;
+}
+
+.capcard .card:hover .card-meta {
+    transform: translate3d(0px,-5px,-5px);
+}
+
+.capcard .card-meta {
+    transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -moz-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -webkit-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -o-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.capcard .card-title {
+    transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -moz-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -webkit-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+    -o-transition: all .5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.capcard .card:hover .card-title {
+    transform: translate3d(0px,-5px,-5px);
+}
+
+.capcard .card-header {
+    padding: 1rem 1rem 0.75rem 1rem !important;
+}
+
+.capcard .card-meta {
+    margin-bottom: 0.3rem !important;
+}
+
+.capcard .card-title {
+    margin-bottom: 0rem !important;
+    color:rgba(37, 37, 41) !important;
+}
+
+.capcard .card-img, .card-img-top {
+    border-top-left-radius: 0rem !important;
+    border-top-right-radius: 0rem !important;
+}
+
+#article p {
+    margin-top: 16px;
+    line-height: 2em;
+    font-size: 16px;
+    letter-spacing: .012em;
+}
+

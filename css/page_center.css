@@ -70,7 +70,7 @@
     margin-top: 16px;
     line-height: 2em;
     font-size: 16px;
-    letter-spacing: .012em;
+    /*letter-spacing: .012em;*/
 }
 
 #article ol {
