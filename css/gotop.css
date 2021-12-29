@@ -22,7 +22,7 @@
 
     .goTop {
         position: fixed;
-        right: 6%;
+        right: 25px;
         bottom: 100px;
         visibility: hidden;
     }
