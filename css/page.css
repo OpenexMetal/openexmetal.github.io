@@ -180,7 +180,7 @@
         padding: 64px 40px;
         width: 90%;
         max-width: 980px;
-        font-size: 18px;
+        font-size: 16px;
         flex-direction: column;
     }
 
@@ -212,7 +212,7 @@
     .article-content .content {
         display: flex;
         width: 100%;
-        font-size: 1.1rem;
+        font-size: 16px;
         flex-direction: column;
     }
 }

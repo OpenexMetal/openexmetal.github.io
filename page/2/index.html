@@ -3,7 +3,7 @@
 
 <head>
 		
-<title>Page Not Found - Heavy Fabrication, Large Machining, Professional Metal Manufacturer from China</title>
+<title>Openex Metal - Heavy Fabrication, Large Machining, Professional Metal Manufacturer from China</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -38,6 +38,8 @@
 
 <body>
 		
+<link rel="stylesheet" href="/css/home.css">
+
 
 <link rel="stylesheet" href="/css/header.css">
 
@@ -55,7 +57,7 @@
 				<ul class="h-menu">
 					
 						
-							<li class="select">
+							<li class="selected">
 								<a href="/">
 									OUR SERVICES
 								</a>
@@ -164,16 +166,222 @@
 </script>
 
 
-<link rel="stylesheet" href="/css/404.css">
+<script>
+	window.addEventListener('scroll', selector);
 
-<div class="header-bg"><div class="bg-overlay">
-    <div class="bg-content">
-		<section class="container py-5">
-			<div class="demo">
-				<p><span>4</span><span>0</span><span>4</span></p>
+	function selector() {
+		let dot = document.querySelector('.selected .dot');
+		let currentMenu = document.querySelector('.selected a');
+		dot.style.background = 'transparent';
+		currentMenu.style.color = '#ffffff88';
+		let selectMenu = document.querySelectorAll('.select a');
+		if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+			currentMenu.classList.add("menu-color2");
+			for (let i = 0; i < selectMenu.length; ++i) {
+				selectMenu[i].classList.add('menu-color2');
+			}
+		} else {
+			currentMenu.classList.remove('menu-color2');
+			for (i = 0; i < selectMenu.length; ++i) {
+				selectMenu[i].classList.remove('menu-color2');
+			}
+		}
+	}
+</script>
+
+
+<div id="home" class="carousel slide carousel-fade" data-bs-ride="carousel">
+	<div class="carousel-indicators">
+		<button type="button" data-bs-target="#home" data-bs-slide-to="0" class="active" aria-current="true"
+			aria-label="Slide 1"></button>
+		<button type="button" data-bs-target="#home" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		<button type="button" data-bs-target="#home" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	</div>
+	<div class="carousel-inner">
+		<div class="carousel-item active" data-interval="3000">
+			<img class="bg-img d-block" src="/image/openex-heavy-fabrication.jpg" alt="Openex Heavy Fabrication">
+			<span class="bg-layer"></span>
+			<div class="container">
+				<div class="carousel-caption text-start text-break px-4">
+					<h1>Heavy Metal Fabrication</h1>
+					<h5 class="d-none d-lg-block">Long-term Accumulation of Experience, Full Range Services</h5>
+					<p class="btn-height"><a class="btn btn-lg btn-primary" href="#cases">Case Study</a></p>
+				</div>
 			</div>
-		</section>
-    </div></div>
+		</div>
+		<div class="carousel-item" data-interval="1500">
+			<img class="bg-img d-block" src="/image/openex-casting.jpg" alt="Openex Casting Service">
+			<span class="bg-layer"></span>
+			<div class="container">
+				<div class="carousel-caption text-start text-break px-4">
+					<h1>Custom Casting Services</h1>
+					<h5 class="d-none d-lg-block">Top-quality Aluminum & Zinc Casting Products</h5>
+					<p class="btn-height"><a class="btn btn-lg btn-primary" target="_blank" rel="noopener" href="https://openexcasting.com/">Learn
+							More</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="carousel-item" data-interval="1500">
+			<img class="bg-img d-block" src="/image/openex-machining-capabilities.jpg" alt="Openex Machining Capabilities">
+			<span class="bg-layer"></span>
+			<div class="container">
+				<div class="carousel-caption text-start text-break px-4">
+					<h1>Large CNC Machining</h1>
+					<h5 class="d-none d-lg-block">Comprehensive Equipment, Superior Capabilities</h5>
+					<p class="btn-height"><a class="btn btn-lg btn-primary" target="_blank" rel="noopener"
+							href="https://openex.en.made-in-china.com/product-group/yMGtdIqhEurB/CNC-Machining-catalog-1.html">Browse
+							Products</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button class="carousel-control-prev d-none d-lg-block" type="button" data-bs-target="#home" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next d-none d-lg-block" type="button" data-bs-target="#home" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	</button>
+</div>
+
+<div class="openex-cases" id="cases">
+    <div class="text-center text-break mb-5 pt-3 pt-lg-4">
+        <h2 class="case-title display-5 h1">Case <span
+                class="bg-faded-primary rounded text-primary py-2">Study</span></h2>
+    </div>
+    <div class="main container px-4 py-5">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                    style="background-image: url('/content/flame-cutting.jpg');">
+                    <a href="/2021/07/flame-cutting/">
+                        <div class="ul-layer">
+                            <span class="d-flex list-unstyled mt-auto">
+                                <span class="me-auto">
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24"
+                                        width="32px" fill="currentColor">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M4 6H2v16h16v-2H4V6zm18-4H6v16h16V2zM12 14.5v-9l6 4.5-6 4.5z" /></svg>
+                                    
+                                </span>
+                        </div>
+                        <div class="ul-overlay">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Openex Flame Cutting for Steel Parts</h2>
+                                <h5 class="pst-exp text-shadow-1">The cutting process is 10 times more efficient than common production line, not only our productivity but the section quality of steel parts is improved significantly.</h5>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="/image/logo.png" width="32" height="32" alt="Openex">
+                                    </li>
+                                    <li class="d-flex align-items-center me-auto">
+                                        <small></small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <small>Jul 15, 2021</small>
+                                    </li>
+                                </ul>
+                            </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                    style="background-image: url('/content/swing-bridge.jpg');">
+                    <a href="/2021/06/slewing-mechanism/">
+                        <div class="ul-layer">
+                            <span class="d-flex list-unstyled mt-auto">
+                                <span class="me-auto">
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24"
+                                        width="32px" fill="currentColor">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M4 6H2v16h16v-2H4V6zm18-4H6v16h16V2zM12 14.5v-9l6 4.5-6 4.5z" /></svg>
+                                    
+                                </span>
+                        </div>
+                        <div class="ul-overlay">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Fabrication and Machining for Large Steel Swing Bridge Slewing Mechanism</h2>
+                                <h5 class="pst-exp text-shadow-1">Openex provides a wide range of custom metalworking, especially in heavy duty metal fabrication and machining from the medium parts to large complex assemblies.</h5>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="/image/logo.png" width="32" height="32" alt="Openex">
+                                    </li>
+                                    <li class="d-flex align-items-center me-auto">
+                                        <small></small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <small>Jun 1, 2021</small>
+                                    </li>
+                                </ul>
+                            </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+            <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+                    style="background-image: url('/content/steel-leveling.jpg');">
+                    <a href="/2021/05/steel-coil-leveling/">
+                        <div class="ul-layer">
+                            <span class="d-flex list-unstyled mt-auto">
+                                <span class="me-auto">
+                                    
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 0 24 24"
+                                        width="32px" fill="currentColor">
+                                        <path d="M0 0h24v24H0V0z" fill="none" />
+                                        <path d="M4 6H2v16h16v-2H4V6zm18-4H6v16h16V2zM12 14.5v-9l6 4.5-6 4.5z" /></svg>
+                                    
+                                </span>
+                        </div>
+                        <div class="ul-overlay">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Steel Coil Precision Leveling for Sheet Metal Fabrication</h2>
+                                <h5 class="pst-exp text-shadow-1">Based on accumulation of experiences in high-strength steel processing, we are able to producing high quality steel parts and first-class metalworking services.</h5>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="/image/logo.png" width="32" height="32" alt="Openex">
+                                    </li>
+                                    <li class="d-flex align-items-center me-auto">
+                                        <small></small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <small>May 25, 2021</small>
+                                    </li>
+                                </ul>
+                            </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<div class="change-page">
+    
+    
+    <div class="p-page" style="justify-content: center;">
+        <a href="/">
+            <div class="previous">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="40" viewBox="0 0 24 24" fill="#898fa0">
+                    <g>
+                        <polygon points="12,20 4,12 12,4 12,6.9 7.9,11 20,11 20,13 7.9,13 12,17.1" />
+                    </g>
+                </svg>
+            </div>
+        </a>
+    </div>
+    
+    
+    
+    </div>
+</div>
 </div>
 		
 <link rel="stylesheet" href="/css/footer.css">
